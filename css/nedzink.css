@@ -1,15 +1,12 @@
 
 
 body {
-  opacity: 0;
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
-body.all-loaded {
-  opacity: 1;
-}
+
 .scroll-top {
   height: 60px;
   width: 45px;
@@ -100,6 +97,7 @@ font-style: italic;
    height: unset;
    right: 10px;
    padding: 0 5px;
+   bottom: 40px;
 }
     
      .scroll-top div {
@@ -230,14 +228,14 @@ font-size: 30px;
 }
 }
 #zintek-banner-1 {
-  background-image: url(../images/zintek-earth-brown-tithe-barn-2.jpg);
+  background-image: url(../images/zintek-gallery/zintek-earth-brown-tithe-barn-2.jpg);
 }
 #zintek-banner-2 {
-  background-image: url(../images/zintek-earth-brown-tithe-barn-2.jpg);
+  background-image: url(../images/zintek-gallery/zintek-earth-brown-tithe-barn-2.jpg);
 }
 
 #zintek-banner-3 {
-  background-image: url(../images/zintek-earth-brown-tithe-barn.jpg);
+  background-image: url(../images/zintek-gallery/zintek-earth-brown-tithe-barn.jpg);
 
 }
 
@@ -245,20 +243,16 @@ font-size: 30px;
 
 /* #region Gallery Section */
 .gallery-section {
-    margin-left: 1px;
+    padding-left: 1px;
     padding-top: 50px;
-  
   
 }
   .gallery-container {
     position: relative;
     padding: 0px 1px 1px 0;
-  width: 33.33%;
-    float: left;
- height: 330px;
-  }
-  #zintek-gallery .gallery-container {
-
+  width: 25%;
+ height: 250px;
+ overflow:hidden;
   }
 
   @media only screen and (min-width:1700px) {
@@ -271,15 +265,21 @@ font-size: 30px;
 .gallery-overlay {
   display: none;
 }
+.gallery-container {
+  width: 33.33%;
+  height: 200px;
+}
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 568px) {
     .gallery-container {
   width: 50%;
-  height: 140px;
+  height: 150px;
+  padding:  padding: 0px 5px 5px 0;
 }
   .gallery-section {
 padding-top: 0px;
+padding-left: 1px;
   
     }
     .gallery-section h2 {
@@ -311,7 +311,7 @@ padding-top: 0px;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #ffffff44;
+    background-color: #1b1b1bab;
   }
   @media only screen and (min-width: 1200px) {
   .gallery-container:hover .gallery-overlay {
@@ -328,18 +328,20 @@ padding-top: 0px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    white-space: nowrap;
   }
   .zoom-icon {
- 
-      width: 100px!important;
+    filter: -webkit-filter: grayscale(1) invert(1); filter: grayscale(1) invert(1);
+      width: 20px!important;
+      margin-left: 10px;
   }
 
   .gallery-container img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
-}
+  
+  }
 
 
 @media only screen and (min-width: 1200px) {
@@ -918,6 +920,30 @@ input#checkbox-nuance-green + label{
   background:url("../images/finishes/nedzink/nz-nuance-green.jpg");
 }
 
+input#checkbox-rock-grey + label{
+  background:url("../images/finishes/zintek/zintek-rock-grey.jpg");
+  background-size: contain;
+}
+input#checkbox-antique-red + label{
+  background:url("../images/finishes/zintek/zintek-antique-red.jpg");
+  background-size: contain;
+}
+input#checkbox-mediterranean-blue + label{
+  background:url("../images/finishes/zintek/zintek-mediterranean-blue.jpg");
+  background-size: contain;
+}
+input#checkbox-lagoon-green + label{
+  background:url("../images/finishes/zintek/zintek-lagoon-green.jpg");
+  background-size: contain;
+}
+input#checkbox-earth-brown + label{
+  background:url("../images/finishes/zintek/zintek-earth-brown.jpg");
+  background-size: contain;
+}
+input#checkbox-graphite-black + label{
+  background:url("../images/finishes/zintek/zintek-graphite-black.jpg");
+  background-size: contain;
+}
 input.sample-checkbox{
   display: none;
 }
@@ -938,7 +964,7 @@ margin-bottom: 10px;
   line-height: 40px;
 }
 
-#nedzink-brochure-request {
+.brochure-request{
   display: flex;
 
 }
