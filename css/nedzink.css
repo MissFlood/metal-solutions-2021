@@ -97,7 +97,7 @@ font-style: italic;
    height: unset;
    right: 10px;
    padding: 0 5px;
-   bottom: 40px;
+   bottom: 80px;
 }
     
      .scroll-top div {
@@ -228,14 +228,14 @@ font-size: 30px;
 }
 }
 #zintek-banner-1 {
-  background-image: url(../images/zintek-gallery/zintek-earth-brown-tithe-barn-2.jpg);
+  background-image: url(../images/zintek-gallery/realizzazioni-zintek-psenner11.jpg);
 }
 #zintek-banner-2 {
-  background-image: url(../images/zintek-gallery/zintek-earth-brown-tithe-barn-2.jpg);
+  background-image: url(../images/zintek-gallery/realizzazioni-zintek-resort-waterrijk1.jpg);
 }
 
 #zintek-banner-3 {
-  background-image: url(../images/zintek-gallery/zintek-earth-brown-tithe-barn.jpg);
+  background-image: url(../images/zintek-gallery/realizzazioni-zintek-pontili-ACTV-28.jpg);
 
 }
 
@@ -254,53 +254,6 @@ font-size: 30px;
  height: 250px;
  overflow:hidden;
   }
-
-  @media only screen and (min-width:1700px) {
-    .gallery-container {
-  width: 25%;
-  
-    }
-  }
-  @media only screen and (max-width: 992px) {
-.gallery-overlay {
-  display: none;
-}
-.gallery-container {
-  width: 33.33%;
-  height: 200px;
-}
-  }
-
-  @media only screen and (max-width: 568px) {
-    .gallery-container {
-  width: 50%;
-  height: 150px;
-  padding:  padding: 0px 5px 5px 0;
-}
-  .gallery-section {
-padding-top: 0px;
-padding-left: 1px;
-  
-    }
-    .gallery-section h2 {
-      padding-top: 50px;
-      padding-bottom: 40px;
-    }
-    .gallery-section .container {
-      padding-right: 0;
-      padding-left: 0;
-    }
-    .filter-buttons-container {
-      margin-bottom: 5px!important;
-    }
-  }
-
- .gallery-section .row {
-    margin-right: 0!important;
-    margin-left: 0!important;
-}
-
-  
   .gallery-overlay {
     position: absolute;
     top: 0;
@@ -313,11 +266,7 @@ padding-left: 1px;
     transition: .5s ease;
     background-color: #1b1b1bab;
   }
-  @media only screen and (min-width: 1200px) {
-  .gallery-container:hover .gallery-overlay {
-    opacity: 1;
-  }
-}
+
   .text {
     color: white;
     font-size: 20px;
@@ -344,12 +293,7 @@ padding-left: 1px;
   }
 
 
-@media only screen and (min-width: 1200px) {
-.filter-button:hover {
-  background-color: rgb(48, 48, 48);
-  color: white;
-  }
-}
+
   
   .filter-button.active {
 
@@ -384,6 +328,81 @@ flex-wrap: wrap;
   outline: none !important;
   box-shadow: none !important;
 }
+
+  @media only screen and (min-width:1700px) {
+    .gallery-container {
+  width: 25%;
+  
+    }
+  }
+  @media only screen and (max-width: 992px) {
+.gallery-overlay {
+  display: none;
+}
+.gallery-container {
+  width: 33.33%;
+  height: 200px;
+}
+  }
+  @media only screen and (max-width: 768px) {
+  .filter-buttons-container { 
+    position: sticky; 
+    top: 50px; 
+    flex-wrap:nowrap; 
+    justify-content: flex-start!important;
+    overflow-x: scroll; 
+    z-index: 999; 
+    padding: 10px 0 10px 0; 
+    background-color:rgb(230, 230, 230);
+    margin-bottom: 0px;
+}
+.filter-button {
+margin-bottom: 0px!important;
+margin-right: 5px!important;
+margin-left: 5px;
+font-size: 10px;
+}
+  }
+
+
+  @media only screen and (max-width: 568px) {
+    .gallery-container {
+  width: 50%;
+  height: 150px;
+  padding:  padding: 0px 5px 5px 0;
+}
+  .gallery-section {
+padding-top: 0px;
+padding-left: 1px;
+  
+    }
+    .gallery-section h2 {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+    .gallery-section .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    
+  }
+  @media only screen and (min-width: 1200px) {
+    .gallery-container:hover .gallery-overlay {
+      opacity: 1;
+    }
+  }
+ .gallery-section .row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+@media only screen and (min-width: 1200px) {
+  .filter-button:hover {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    }
+  }
+  
+  
 
 /* #endregion */
 
@@ -475,7 +494,7 @@ figcaption {
     padding-bottom: 20px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 #zintek-downloads-container {
   justify-content: flex-start;
 }
@@ -581,7 +600,7 @@ margin: 20px 0 20px 0;
   max-height: 320px;
 }
 .nav-pills .nav-link {
-  font-size: 12px!important;
+  font-size: 11px!important;
 }
   }
 #pills-2 .row {
