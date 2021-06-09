@@ -661,26 +661,20 @@
 <h2 data-aos="fade-down" data-aos-duration="1000">Downloadable Literature</h2>
   <div style="overflow-y:hidden" id="zintek-downloads-container" class="downloads-container">
 
-  <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-corporate-brochure.pdf">
+  <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/zintek/zintek-the-coloured-ones-brochure.pdf">
     <figure>
-    <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-corporate-brochure-thumb.jpg">
-  <figcaption>Corporate brochure</figcaption>
+    <img class="downloads-thumbnail zintek-downloads-thumbnail" src="downloads/zintek/zintek-the-coloured-ones-brochure-thumbnail.jpg">
+  <figcaption>The Coloured Ones Brochure</figcaption>
   </figure>
   </a>
   
-  <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-delivery-program.pdf">
+  <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/zintek/zintek-supply-and-installation-specifications-manual.pdf">
     <figure>
-    <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-delivery-program-thumb.jpg">
- <figcaption>Delivery program</figcaption>
+    <img class="downloads-thumbnail zintek-downloads-thumbnail" src="downloads/zintek/zintek-supply-and-installation-specifications-manual-thumbnail.jpg">
+ <figcaption>Supply & Installation Specifications Manual</figcaption>
   </figure> 
 </a>
 
-<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-technical-handbook.pdf">
-  <figure>
-  <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-technical-handbook-thumb.jpg">
-<figcaption>Technical handbook</figcaption>
-</figure> 
-</a>
   </div>
   
   </div>
@@ -692,7 +686,7 @@
 <section id="zintek-gallery" class="gallery-section grey-theme">
     <div class="gallery">
       <h2 data-aos="fade-down" data-aos-duration="1000">Gallery</h2>
-      
+
       <div class="filter-buttons-container justify-content-center">
         <button class="unhover btn filter-button active" id="all" onclick="call(this.id)">All</button>
         <button class="unhover btn filter-button" id="rock-grey" onclick="call(this.id)">Rock Grey</button>
@@ -779,7 +773,7 @@
 <!-- Contact Form -->
 <section id="zintek-contact-form" class="white-theme contact-form">
   <div class="section-padding">
-    <div style="overflow-x:hidden, overflow-y:hidden;" class="container">
+    <div style="overflow-x:hidden; overflow-y:hidden;" class="container">
       
       <h2 data-aos-once="true" data-aos="fade-down" data-aos-duration="1000">Get a Free Quote, Brochures & Samples!</h2>
       <form data-aos-once="true" data-aos="fade-up" data-aos-duration="1000" id="zintek-form" method="post" action="https://formspree.io/f/myylwzqn" enctype="multipart/form-data">
@@ -847,24 +841,15 @@
 <div class="col-md-6 order-samples">
   <p class="p-brochure" style="font-weight: bold; margin-bottom: 5px;">Select brochures:</p>
   <div id="zintek-brochure-request" class="brochure-request">
-  <label for="zintek-checkbox-brochure-1" class="form-check-label">
+  <label style="width: 50%;"for="zintek-checkbox-brochure-1" class="form-check-label">
 <input type="checkbox" id="zintek-checkbox-brochure-1" class="checkbox" name="zintek-brochure-request" value="brochure 1">
-Brochure 1</label> 
+The Coloured Ones Brochure</label> 
  
-<label for="zintek-checkbox-brochure-2" class="form-check-label">
+<label style="width: 50%;" for="zintek-checkbox-brochure-2" class="form-check-label">
   <input type="checkbox" id="zintek-checkbox-brochure-2" class="checkbox" name="zintek-brochure-request" value="brochure 2">
-  Brochure 2</label> 
+  Supply & Installation Specifications Manual</label> 
+  </div>
 
-
-<label for="zintek-checkbox-brochure-3" class="form-check-label">
-  <input type="checkbox" id="zintek-checkbox-brochure-3" class="checkbox" name="zintek-brochure-request" value="brochure 3">
-  Brochure 3</label> 
-
-  
-<label for="zintek-checkbox-brochure-4" class="form-check-label">
-  <input type="checkbox" id="zintek-checkbox-brochure-4" class="checkbox" name="zintek-brochure-request" value="brochure 4">
-  Brochure 4</label> 
-</div>
 
 <p style="font-weight: bold; margin-top: 15px; margin-bottom: 5px; ">Select required samples:</p>
 
@@ -1088,11 +1073,14 @@ Brochure 1</label>
 </script>
 
 <script>
-  $(".gallery-section .filter-button").click(function() {
+ 
+    $(".gallery-section .filter-button").click(function() {
          $([document.documentElement, document.body]).animate({
-             scrollTop: $(".gallery-content").offset().top-135
+             scrollTop: $(".gallery-content").offset().top-100
          }, 200);
      });
+
+ 
  
  </script>
   <!-- Contact Form Required Fields -->
