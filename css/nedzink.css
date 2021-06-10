@@ -143,16 +143,25 @@ font-style: italic;
   bottom: 10px;
   text-align: center;
 }
-.manufacturer-welcome-text h1 {
-  color: white;
-  font-size: 80px;
-}
 
+
+}
+@media only screen and (min-width: 1200px) {
+  .manufacturer-welcome-text h1 {
+    font-size: 80px;
+  }
 }
 .page-header-img {
   background-color: transparent;
   z-index: 1001;
   
+}
+#zm-silesia-logo {
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
 }
 .manufacturer-banner {
   margin-top: -105px;
@@ -238,9 +247,16 @@ font-size: 30px;
   background-image: url(../images/zintek-gallery/realizzazioni-zintek-pontili-ACTV-28.jpg);
 
 }
+
 #zm-banner-1 {
-  background-image: url(../images/proclad-western-harbour-zm-preaged-goodish.JPG);
-  background-position: right;
+  background-image: url(../images/zm-silesia-gallery/zm-preaged-zinc-cladding-proclad-western-harbour-2.png);
+}
+
+@media only screen and (max-width:992px) {
+  #zm-banner-1 {
+    background-image: url(../images/zm-silesia-gallery/zm-silesia-preaged-zinc-2.jpg);
+   background-position: center;
+  }
 }
 
 /* #endregion */
@@ -316,16 +332,25 @@ color: white;
   border-radius: 40px;
   padding:10px;
 margin-right: 10px;
-margin-bottom: 10px;
   color:#000000;
   white-space: nowrap;
   }
 
 .filter-buttons-container {
 display: flex;
-margin-bottom: 30px;
-flex-wrap: wrap;
+position: sticky; 
+    top: 65px; 
+    flex-wrap:nowrap; 
+    justify-content: center;
+    overflow-x: scroll; 
+    z-index: 999; 
+    padding: 10px 0 10px 0; 
+    background-color:rgb(230, 230, 230);
+    margin-bottom: 0px;
 
+}
+.filter-buttons-container::-webkit-scrollbar {
+  display: none;
 }
 
 .btn:focus, .btn:active {
@@ -348,17 +373,15 @@ flex-wrap: wrap;
   height: 200px;
 }
   }
-  @media only screen and (max-width: 768px) {
+
+
+  @media only screen and (max-width: 992px) {
   .filter-buttons-container { 
-    position: sticky; 
     top: 50px; 
-    flex-wrap:nowrap; 
     justify-content: flex-start!important;
-    overflow-x: scroll; 
-    z-index: 999; 
-    padding: 10px 0 10px 0; 
-    background-color:rgb(230, 230, 230);
-    margin-bottom: 0px;
+}
+#zm-silesia-gallery .filter-buttons-container {
+  justify-content: center!important;
 }
 .filter-button {
 margin-bottom: 0px!important;
@@ -502,6 +525,16 @@ figcaption {
 @media only screen and (max-width: 767px) {
 #zintek-downloads-container {
   justify-content: flex-start;
+}
+}
+.downloads-container-short {
+  justify-content: center;
+  overflow-x:hidden;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 568px) {
+.downloads-container-short a {
+  width: calc(50% - 10px);
 }
 }
 .zintek-downloads-thumbnail {
@@ -655,6 +688,8 @@ position: relative;
   .tabs-section .sticky-top {
     position:unset;
   }
+  
+  
 
  
   @media only screen and (max-width: 768px) {
@@ -694,7 +729,9 @@ text-align: center;
 
 /* #region Finishes Section */
 
-
+#zm-silesia-finishes .nav-pills {
+  justify-content: center;
+}
 .card-body {
   background-color: transparent;
   border: none;
@@ -831,7 +868,6 @@ font-size: 13px;
   display: block;
 }
 }
-
 
 
 /* #endregion */
@@ -976,6 +1012,28 @@ input#checkbox-graphite-black + label{
   background:url("../images/finishes/zintek/zintek-graphite-black.jpg");
   background-size: contain;
 }
+input#checkbox-bright-rolled + label{
+  background:url("../images/finishes/zm-silesia/zm-natural-swatch.jpg");
+  background-size: contain;
+}
+input#checkbox-pre-aged + label{
+  background:url("../images/finishes/zm-silesia/zm-preaged-swatch.jpg");
+  background-size: contain;
+}
+input#checkbox-carbon + label{
+  background:url("../images/finishes/zm-silesia/zm-carbon-swatch.jpg");
+  background-size: contain;
+}
+
+.sample-request-flex-x3 {
+  flex-wrap: wrap;
+}
+
+
+.sample-rq {
+  width: 100%;
+}
+
 input.sample-checkbox{
   display: none;
 }
@@ -1023,6 +1081,9 @@ width: 50%;
 }
 
 }
+#zm-silesia-contact-form .brochure-request label {
+  width: 100%;
+    }
 
 /* #endregion */
 
