@@ -85,11 +85,14 @@ font-size: 35px;
 line-height: 1;
 text-align: center;
 }
-
 section h2 {
-margin-bottom: 20px;
+  margin-bottom: 2em;
 }
-
+@media only screen and (max-width: 768px) {
+  section h2 {
+    margin-bottom: 1.5em;
+  }
+}
 .more-button {
   display: block;
   width: 150px;
@@ -672,7 +675,7 @@ text-decoration: underline;
 .navbar.solid {
   background-color: rgb(26, 26, 26, 1)!important;
   transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px rgb(0, 0, 0);
+ 
 }
 
 /* #endregion */

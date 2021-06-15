@@ -6,7 +6,32 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
+main section {
+  padding-top: 5em;
+  padding-bottom: 8em;
 
+}
+.last-padding {
+  padding-bottom: 0!important;
+  margin-bottom: 0!important;
+}
+.first-padding {
+  margin-top: 15px!important;
+  padding-top: 0!important;
+}
+.gallery-section {
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+main section {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+.tabs-section {
+  padding-top: 0;
+}
+
+}
 .scroll-top {
   height: 60px;
   width: 45px;
@@ -46,11 +71,10 @@ body {
   filter: grayscale(1) invert(1);
 
 }
-.finishes h2, .downloads-section h2, .contact-form h2{
+section h2{
   font-size: 24px;
 font-weight: bold;
 text-align: center;
-padding-bottom: 30px;
 }
 .tabs-section h2 {
   font-size: 24px;
@@ -69,12 +93,7 @@ padding-bottom: 30px;
   }
   }
 
-.gallery-section h2 {
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 0px!important;
-}
+
 
 @media only screen and (max-width: 768px) {
   .tabs-section h2 {
@@ -83,9 +102,8 @@ font-weight:normal;
 color: rgb(0, 0, 0);
 font-style: italic;
   }
-  .finishes h2, .downloads-section h2, .gallery-section h2 {
+  section h2 {
     font-size: 22px;
-    padding-bottom: 20px;
   }
   .scroll-top {
    border-radius: 5px;
@@ -127,6 +145,38 @@ font-style: italic;
   color: white;
   font-size: 43px;
 }
+
+#nedzink-logo {
+  width: 350px;
+  margin-top: -20px;
+  margin-right: -16px;
+}
+@media only screen and (max-width: 668px) {
+  #nedzink-logo {
+  width: 80%;
+  }
+}
+#zintek-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+@media only screen and (max-width: 668px) {
+  #zintek-logo {
+  width: 95%;
+  }
+}
+#aurubis-logo-banner {
+  width: 600px;
+  }
+  @media only screen and (max-width:668px) {
+  #aurubis-logo-banner {
+    width: 100%;
+    }
+  }
+
+
 
 .manufacturer-welcome-text .top-welcome-text {
  margin: 10px 0 10px 0;
@@ -259,12 +309,26 @@ font-size: 30px;
   }
 }
 
+#aurubis-banner-1 {
+  background-image: url(../images/aurubis-gallery/banner/NordicRoyal_HardRockHotel_2.jpg);
+  
+}
+#aurubis-banner-3 {
+  background-image: url(../images/aurubis-gallery/banner/045\ De\ Maan\ -\ Mechelen.jpg);
+
+}
+#aurubis-banner-2 {
+  background-image: url(../images/aurubis-gallery/banner/Copper_architecture_Hero.jpg);
+ 
+}
+
+
 /* #endregion */
 
 /* #region Gallery Section */
 .gallery-section {
     padding-left: 1px;
-    padding-top: 50px;
+
   
 }
   .gallery-container {
@@ -398,14 +462,10 @@ font-size: 10px;
   height: 150px;
 }
   .gallery-section {
-padding-top: 0px;
 padding-left: 1px;
   
     }
-    .gallery-section h2 {
-      padding-top: 50px;
-      padding-bottom: 40px;
-    }
+  
     .gallery-section .container {
       padding-right: 0;
       padding-left: 0;
@@ -433,15 +493,6 @@ padding-left: 1px;
 /* #endregion */
 
 /* #region Downloads Section */
-.downloads-section {
-  padding: 60px 0 50px 0;
-
-}
-
-.downloads-section div a {
-
-  margin: 20px;
-}
 
 
 
@@ -458,6 +509,7 @@ text-decoration: none!important;
 color: black;
 font-size: 14px;
 text-transform: capitalize;
+margin: 30px 30px 0 0;
 }
 
 .downloads-section div a figcaption {
@@ -480,7 +532,10 @@ text-align: center;
   justify-content: center;
 }
 
-figure { display: table; }
+figure { 
+  display: table;
+margin: 0;
+ }
 
 
 figcaption { display: table-caption; caption-side: bottom ; }
@@ -495,6 +550,9 @@ figcaption {
    overflow-x:scroll;
    justify-content: flex-start;
  }
+ .downloads-container::-webkit-scrollbar {
+  display: none;
+}
  #zintek-downloads-container {
    justify-content: center;
  }
@@ -513,14 +571,8 @@ figcaption {
     padding-left: 10px;
   
   }
-  .downloads-section {
-    padding-top: 0px;
-    padding-bottom: 30px;
-  }
-  .downloads-section h2 {
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
+
+
 }
 @media only screen and (max-width: 767px) {
 #zintek-downloads-container {
@@ -545,33 +597,29 @@ figcaption {
 /* #endregion */
 
 /* #region Tabs */
-.manufacturer-logo {
-  position: absolute;
-  right: 0;
-  
+  .juxtapose, .juxtapose-0 {
+    width: 400px!important; 
+    height: 400px!important;
+    margin-top: 20px;
   }
-  .manufacturer-logo-2 {
-    display: none;
+  .jx-knightlab {
+    display: none!important;
   }
-  #nedzink-logo {
-    width: 300px;
-    margin-top: -20px;
-    margin-right: -16px;
-  }
-  #zintek-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-  }
-  @media only screen and (max-width: 668px) {
-    #zintek-logo {
-    width: 95%;
+
+  @media only screen and (max-width: 992px) {
+    .juxtapose, .juxtapose-0 {
+      width: 300px!important; 
+      height: 300px!important;
     }
+
   }
-.tab-pane h2 {
-margin: 20px 0 20px 0;
-}
+  @media only screen and (max-width:768px) {
+    .juxtapose, .juxtapose-0 {
+      width: 350px!important; 
+      height: 350px!important;
+    }
+
+  }
 .manufacturer-video{
   float: right;
   margin-left: 10px;
@@ -584,15 +632,6 @@ margin: 20px 0 20px 0;
   .manufacturer-video {
   width: 100%;
 
-}
-.manufacturer-logo {
-  display: none;
-}
-.manufacturer-logo-2 {
-  display: block;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
 }
   }
   .pill-2-img-container {
@@ -663,22 +702,20 @@ margin: 20px 0 20px 0;
   font-weight: bold;
   text-decoration: underline;
   }
-  
+
   .nav-pills .nav-link {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 500;
   border-radius: 0px;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   padding-left: 0px;
   color:#000000;
   }
 
 
   .tabs-section {
-padding-top: 2em;
-padding-bottom: 5em;
 position: relative;
   }
   #about-zintek {
@@ -688,7 +725,23 @@ position: relative;
   .tabs-section .sticky-top {
     position:unset;
   }
-  
+ 
+  .brochure-request label {
+    display: block;
+    padding-left: 17px;
+    text-indent: -17px;
+}
+.brochure-request input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  right: 2px;
+  *overflow: hidden;
+}
   
 
  
@@ -703,15 +756,6 @@ position: relative;
 flex-direction: column;
 padding: 5px 0 0px 0!important;
 text-align: center;
-      }
-      .tab-pane h2 {
-     text-align: center;
-     margin: 30px 0 30px 0;
-        }
-     
-  .tabs-section {
-    padding-top:0em;
-    padding-bottom: 2em;
       }
 
       .tabs-section .nav-pills {
@@ -728,7 +772,9 @@ text-align: center;
 /* #endregion */
 
 /* #region Finishes Section */
-
+#nedzink-finishes .finishes-block p, #zm-silesia-finishes .finishes-block p, #zintek-finishes .finishes-block p {
+  margin-bottom: 0;
+}
 #zm-silesia-finishes .nav-pills {
   justify-content: center;
 }
@@ -744,6 +790,32 @@ width: 100%;
 .mobile-finishes-block .sample-item, .tablet-finishes-block .sample-item{
  padding-right: 10px;
   }
+  .finishes-block-row-5 img, .finishes-block-row-6 img {
+  width: 100%;
+  }
+  .finishes-block-row-5 .sample-buttons{
+   margin: 0 0 5px 0;
+  }
+
+  .finishes-block-row-5 .sample-item {
+    padding: 0 5px 0 0px;
+    width: 20%;
+  }
+  .finishes-block-row-6 .sample-item {
+    padding: 0 5px 0 5px;
+    width: 16.666%;
+
+  }
+  .finishes-block-row-5 .sample-buttons, .finishes-block-row-6 .sample-buttons {
+    display: flex;
+    
+  }
+
+  
+  .finishes h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
   .sample-buttons {
    margin: 0px 0px 10px 10px;
   }
@@ -754,11 +826,35 @@ width: 100%;
   }
   .sample-item .sample-overlay h4 {
 margin-bottom: 0;
-padding-bottom: 2px;
+opacity: 0;
+
   }
-  .sample-item a[aria-expanded=true] .sample-overlay {
+  .sample-overlay {
+    position: absolute;
+    bottom: 0!important;
+    opacity: 0;
+    width: 100%;
+    transition: .5s ease;
+  }
+  .sample-item a[aria-expanded=true] .sample-overlay{
     opacity: 1;
     }
+    .finishes-block-row-6 .sample-overlay {
+      opacity: 1;
+    }
+
+  .sample-item a .sample-overlay img {
+    display: none;
+  }
+ 
+  .sample-item a[aria-expanded=true] .sample-overlay img{
+   display: inline;
+    }
+    .sample-item a[aria-expanded=true] .sample-overlay h4{
+      opacity: 1;
+     padding-bottom: 2px;
+      
+      }
     .down-arrow {
    width: 25px!important;
     }
@@ -771,8 +867,10 @@ padding-bottom: 2px;
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
-
-
+.finishes-block .sample-item:hover .sample-overlay h4{
+ opacity:1;
+    }
+  
 .line {
   height: 50px;
 border-right: solid 1px;
@@ -782,16 +880,9 @@ border-right: solid 1px;
   display: flex;
 }
 
-.finishes {
-padding: 60px 0 60px 0;
-}
 @media only screen and (max-width: 768px) {
-.finishes {
-  padding: 0px 0 70px 0;
-}
-.finishes h2 {
-  padding: 50px 0 0 0
-}
+
+
   }
 .finishes-block .nav-link {
   padding: 0px;
@@ -810,14 +901,7 @@ padding: 60px 0 60px 0;
 
 }
 
-.sample-overlay {
-  position: absolute;
-  bottom: 0!important;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
- 
-}
+
 #naturel-tab .sample-overlay h4 {
   color: rgb(34, 34, 34);
 }
@@ -834,7 +918,10 @@ padding: 10px;
 text-transform: capitalize;
 font-size: 13px;
 }
+.sample-h4-background-dark {
+  background-color: rgba(0, 0, 0, 0.473);
 
+}
 .finishes-section .nav-item .nav-link.active .sample-overlay {
   opacity:1;
 }
@@ -846,8 +933,18 @@ font-size: 13px;
   display:none;
  }
  
- 
- 
+ #aurubis-finishes .finishes-block h4 {
+  font-size: 13px;
+ }
+ #aurubis-finishes .mobile-finishes-block .sample-item {
+   padding-right: 5px;
+ }
+ #aurubis-finishes .mobile-finishes-block .sample-buttons {
+   margin: 0 0 5px 5px;
+ }
+ #aurubis-finishes .mobile-finishes-block .sample-item h4 {
+   font-size: 12px;
+ }
  
  
  @media only screen and (min-width: 568px) {
@@ -857,9 +954,20 @@ font-size: 13px;
   .tablet-finishes-block {
     display: block;
   }
+
   }
 
-
+@media only screen and (max-width: 992px) {
+  #aurubis-finishes .finishes-block .sample-item{
+  padding-right: 0px
+  }
+  #aurubis-finishes .finishes-block .sample-buttons{
+    margin: 0 0 5px 5px;
+    }
+    #aurubis-finishes .finishes-block h4{
+      font-size: 11px;
+      }
+}
 @media only screen and (min-width: 992px) {
 .mobile-finishes-block, .tablet-finishes-block{ 
   display: none!important;
@@ -886,10 +994,7 @@ label {
   font-size: 30px;
   line-height: 1;
 }
-.contact-form {
-  padding-top: 70px;
-  padding-bottom: 60px;
-}
+
 .contact-form label {
   margin-bottom: 10px;
 }
@@ -930,14 +1035,8 @@ line-height: 2;
 input[type='file'] {
   line-height: 3.4;
     }
-.contact-form {
-  padding-top: 0px;
-  padding-bottom: 50px;
-}
-.contact-form h2 {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
+
+
 .contact-form input[type='text'], .contact-form input[type='tel'], .contact-form select {
   height: 44px;
 }
