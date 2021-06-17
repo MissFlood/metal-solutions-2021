@@ -71,10 +71,17 @@ main section {
   filter: grayscale(1) invert(1);
 
 }
-section h2{
+main section h2{
   font-size: 24px;
 font-weight: bold;
 text-align: center;
+}
+.downloads-section h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px!important;
+  color: #000000;
+
 }
 .tabs-section h2 {
   font-size: 24px;
@@ -494,15 +501,133 @@ padding-left: 1px;
 
 /* #region Downloads Section */
 
-
+/*280 x 210*/
 
 .downloads-thumbnail {
   height: 253px;
   width: 180px;
   box-shadow: rgb(184, 184, 184) 2px 2px 5px;
-  object-fit: cover;
+  object-fit: contain;
+}
+#aurubis-downloads .downloads-thumbnail{
+  height: 267px;
+  width: 190px;
+  }
+  #aurubis-downloads .downloads-container {
+    flex-wrap:wrap;
+  
+  }
+  #copper-book {
+    width: 236px!important;
+    height: 267px!important;
+  }
+
+  #surface-evolution {
+    width: 267px!important;
+    height: 190px!important;
+
+  }
+
+
+ .downloads-side-header {
+
+    left:0!important;
+    z-index: 1019!important;
+    width: 75px;
+    height: 360px;
+    background-color:rgba(26, 26, 26, 0.753);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.downloads-side-header h3 {
+  writing-mode: vertical-lr;
+  /*text-orientation: sideways;
+  */transform:scale(-1);
+  height: 360px;
+  width: 100%;
+  text-align: center;
+  line-height: 75px;
+  margin-bottom: 0;
+  font-size: 15px;
+  display: block;
+  white-space: nowrap;
+  color: white;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+}
+.buffer {
+  height: 50px;
+  width: 75px;
+}
+  .brochures-downloads, .data-sheets-downloads {
+  overflow-x: hidden;
+  overflow-y: hidden;
+    display: flex;
+    position: relative;
+  background:linear-gradient(rgb(216, 216, 216), rgb(216, 216, 216)) top left /* left or right or else */ no-repeat;
+  background-size:40% 1px;
+
+  }
+  .brochures-downloads {
+    margin-bottom: 50px;
+  }
+
+  .brochures-downloads a, .data-sheets-downloads a {
+    margin-right: 70px!important;
+  }
+  @media only screen and (max-width: 992px) {
+    .brochures-downloads a, .data-sheets-downloads a {
+      margin-right: 40px!important;
+      margin-top: 25px!important;
+    }
+    .brochures-downloads, .data-sheets-downloads {
+    background-size: 95% 1px;
+    
+    } 
+  }
+
+ 
+  #slideRight, #slideLeft {
+    position: sticky!important;
+    position: -webkit-sticky!important;
+    right:0!important;
+    z-index: 1019!important;
+    border:none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    box-shadow: none;
+  }
+  #slideLeft {
+    right: 60px!important;
+  }
+  .scroll-right-arrow {
+    filter: grayscale(100%);
+    width: 50px;
+    transform: rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+
+}
+.scroll-left-arrow {
+  filter: grayscale(100%);
+  width: 50px;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
 }
 
+
+  .downloads-container a{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
 
 .downloads-section div a {
 text-decoration: none!important;
@@ -684,9 +809,7 @@ figcaption {
   font-size: 11px!important;
 }
   }
-#pills-2 .row {
-  flex-direction: column;
-}
+
 .nav-pills {
   margin-top: 0px;
 
@@ -769,6 +892,69 @@ text-align: center;
 .navbar .menu-open {
   background-color: black!important;
 }
+#nordic-decor-carousel .item {
+height: 400px;
+
+}
+@media only screen and (max-width: 668px) {
+  #nordic-decor-carousel .item {
+    height: 300px;
+    }
+    #nordic-decor-carousel {
+      margin-top: 20px;
+    }
+    #nordic-decor-carousel .owl-nav {
+      display: none;
+    }
+}
+#nordic-decor-carousel .item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+#nordic-decor-carousel .owl-next, .downloads-section .owl-next {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+#nordic-decor-carousel .owl-prev, .downloads-section .owl-prev {
+  position: absolute;
+  top: 45%;
+  left: 0;
+}
+#nordic-decor-carousel .owl-prev, #nordic-decor-carousel .owl-next, 
+.downloads-section .owl-prev, .downloads-section .owl-next {
+  font-size: 40px!important;
+  color:white;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  box-shadow: none;
+
+}
+#nordic-decor-carousel .owl-prev:hover, #nordic-decor-carousel .owl-next:hover,
+.downloads-section .owl-prev:hover, .downloads-section .owl-next:hover  {
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+#nordic-decor-carousel .owl-prev span, #nordic-decor-carousel .owl-next span,
+.downloads-section .owl-prev span, .downloads-section .owl-next span{
+position: relative;
+bottom: 29px;
+}
+.downloads-section .owl-next {
+
+}
+.owl-dot {
+   outline:none!important;
+  }
+
 /* #endregion */
 
 /* #region Finishes Section */
