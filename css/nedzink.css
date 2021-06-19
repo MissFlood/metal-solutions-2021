@@ -24,8 +24,8 @@ main section {
 }
 @media only screen and (max-width: 768px) {
 main section {
-  padding-top: 3em;
-  padding-bottom: 4em;
+  padding-top: 4em;
+  padding-bottom: 6em;
 }
 .tabs-section {
   padding-top: 0;
@@ -317,15 +317,15 @@ font-size: 30px;
 }
 
 #aurubis-banner-1 {
-  background-image: url(../images/aurubis-gallery/banner/NordicRoyal_HardRockHotel_2.jpg);
+  background-image: url(../images/aurubis-gallery/banner/aurubis-nordic-royal-copper-architecture-hard-rock-hotel-budapest.jpg);
   
 }
-#aurubis-banner-3 {
-  background-image: url(../images/aurubis-gallery/banner/045\ De\ Maan\ -\ Mechelen.jpg);
+#aurubis-banner-2 {
+  background-image: url(../images/aurubis-gallery/banner/aurubis-nordic-brass-copper-architecture.jpg);
 
 }
-#aurubis-banner-2 {
-  background-image: url(../images/aurubis-gallery/banner/Copper_architecture_Hero.jpg);
+#aurubis-banner-3 {
+  background-image: url(../images/aurubis-gallery/banner/aurubis-q&m-dings-nordic-brown-light.jpg);
  
 }
 
@@ -501,7 +501,6 @@ padding-left: 1px;
 
 /* #region Downloads Section */
 
-/*280 x 210*/
 
 .downloads-thumbnail {
   height: 253px;
@@ -518,8 +517,8 @@ padding-left: 1px;
   
   }
   #copper-book {
-    width: 236px!important;
-    height: 267px!important;
+    width: 200px!important;
+    height: 226px!important;
   }
 
   #surface-evolution {
@@ -527,7 +526,6 @@ padding-left: 1px;
     height: 190px!important;
 
   }
-
 
  .downloads-side-header {
 
@@ -557,10 +555,7 @@ padding-left: 1px;
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: vertical-lr;
 }
-.buffer {
-  height: 50px;
-  width: 75px;
-}
+
   .brochures-downloads, .data-sheets-downloads {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -570,15 +565,24 @@ padding-left: 1px;
   background-size:40% 1px;
 
   }
+  @media only screen and (max-width: 768px) {
+    .brochures-downloads, .data-sheets-downloads {
+ 
+      background: transparent;
+  
+    
+      }
+
+  }
   .brochures-downloads {
     margin-bottom: 50px;
   }
 
-  .brochures-downloads a, .data-sheets-downloads a {
-    margin-right: 70px!important;
+  .brochures-downloads a figure, .data-sheets-downloads a figure{
+    margin-right: 80px!important;
   }
   @media only screen and (max-width: 992px) {
-    .brochures-downloads a, .data-sheets-downloads a {
+    .brochures-downloads a figure, .data-sheets-downloads a figure{
       margin-right: 40px!important;
       margin-top: 25px!important;
     }
@@ -588,60 +592,40 @@ padding-left: 1px;
     } 
   }
 
+  @media only screen and (max-width: 768px) {
+    .brochures-downloads a figure, .data-sheets-downloads a figure {
  
-  #slideRight, #slideLeft {
-    position: sticky!important;
-    position: -webkit-sticky!important;
-    right:0!important;
-    z-index: 1019!important;
-    border:none;
-    background-color: rgb(255, 255, 255);
-    outline: none;
-    box-shadow: none;
-  }
-  #slideLeft {
-    right: 60px!important;
-  }
-  .scroll-right-arrow {
-    filter: grayscale(100%);
-    width: 50px;
-    transform: rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -moz-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
+      margin-top: 10px!important;
+    }
+    .brochures-downloads {
+      margin-bottom: 60px;
+    }
+  
 
+  }
+
+  .downloads-container a figure{
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: flex-end!important;
+  
+  }
+.downloads-container a {
+  text-decoration: none;
 }
-.scroll-left-arrow {
-  filter: grayscale(100%);
-  width: 50px;
-  transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-}
+.downloads-section div a figure {
 
-
-  .downloads-container a{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-  }
-
-.downloads-section div a {
-text-decoration: none!important;
 color: black;
 font-size: 14px;
 text-transform: capitalize;
-margin: 30px 30px 0 0;
+margin: 50px 50px 0 0;
 }
 
 .downloads-section div a figcaption {
 margin-top: 10px;
 text-align: center;
+text-decoration: none!important;
 }
-
 @media only screen and (min-width: 1200px) {
 .downloads-thumbnail:hover {
   position: relative;
@@ -892,39 +876,57 @@ text-align: center;
 .navbar .menu-open {
   background-color: black!important;
 }
-#nordic-decor-carousel .item {
+
+#nordic-decor-carousel-2 {
+  display: none;
+
+}
+
+.nordic-decor-carousel .item {
 height: 400px;
 
 }
 @media only screen and (max-width: 668px) {
-  #nordic-decor-carousel .item {
+ .nordic-decor-carousel .item {
     height: 300px;
     }
-    #nordic-decor-carousel {
+    .nordic-decor-carousel {
       margin-top: 20px;
     }
-    #nordic-decor-carousel .owl-nav {
-      display: none;
+  
+    #nordic-decor-carousel-2 {
+      display: block!important;
+    margin: 20px 0 20px 0;
     }
+    #nordic-decor-carousel-1 {
+      display: none!important;
+    }
+
 }
-#nordic-decor-carousel .item img{
+
+
+.nordic-decor-carousel .item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 
 }
+.nordic-decor-carousel .owl-nav{
+margin: 0 5px;
+padding: 0;
+}
 
-#nordic-decor-carousel .owl-next, .downloads-section .owl-next {
+.nordic-decor-carousel .owl-next, .downloads-section .owl-next {
   position: absolute;
   top: 45%;
   right: 0;
 }
-#nordic-decor-carousel .owl-prev, .downloads-section .owl-prev {
+.nordic-decor-carousel .owl-prev, .downloads-section .owl-prev {
   position: absolute;
   top: 45%;
   left: 0;
 }
-#nordic-decor-carousel .owl-prev, #nordic-decor-carousel .owl-next, 
+.nordic-decor-carousel .owl-prev, .nordic-decor-carousel .owl-next, 
 .downloads-section .owl-prev, .downloads-section .owl-next {
   font-size: 40px!important;
   color:white;
@@ -934,7 +936,7 @@ height: 400px;
   box-shadow: none;
 
 }
-#nordic-decor-carousel .owl-prev:hover, #nordic-decor-carousel .owl-next:hover,
+.nordic-decor-carousel .owl-prev:hover, .nordic-decor-carousel .owl-next:hover,
 .downloads-section .owl-prev:hover, .downloads-section .owl-next:hover  {
   background-color: rgba(0, 0, 0, 0.219);
   border-radius: 0px;
@@ -943,10 +945,17 @@ height: 400px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
 }
-#nordic-decor-carousel .owl-prev span, #nordic-decor-carousel .owl-next span,
+.nordic-decor-carousel .owl-prev span, .nordic-decor-carousel .owl-next span,
 .downloads-section .owl-prev span, .downloads-section .owl-next span{
-position: relative;
-bottom: 29px;
+  color: white;
+  position: relative;
+  bottom: 29px;
+}
+@media only screen and (max-width: 668px) {
+  .nordic-decor-carousel .owl-next span, .nordic-decor-carousel .owl-prev span{
+
+   bottom: 24px;
+}
 }
 .downloads-section .owl-next {
 
@@ -1004,6 +1013,9 @@ width: 100%;
   }
   .sample-buttons {
    margin: 0px 0px 10px 10px;
+  }
+  #aurubis-finishes .sample-buttons {
+    margin-left: 0px;
   }
   .sample-item a {
     display:block;
@@ -1254,6 +1266,7 @@ input.sample-checkbox:checked + label {
   box-shadow: 2px 2px 5px gray;
 
 }
+/*NedZink*/
 input#checkbox-neo + label{
   background:url("../images/finishes/nedzink/nz-neo.jpg");
 }
@@ -1272,7 +1285,7 @@ input#checkbox-nuance-blue + label{
 input#checkbox-nuance-green + label{
   background:url("../images/finishes/nedzink/nz-nuance-green.jpg");
 }
-
+/*Zintek*/
 input#checkbox-rock-grey + label{
   background:url("../images/finishes/zintek/zintek-rock-grey.jpg");
   background-size: contain;
@@ -1297,6 +1310,7 @@ input#checkbox-graphite-black + label{
   background:url("../images/finishes/zintek/zintek-graphite-black.jpg");
   background-size: contain;
 }
+/*ZM Silesia*/
 input#checkbox-bright-rolled + label{
   background:url("../images/finishes/zm-silesia/zm-natural-swatch.jpg");
   background-size: contain;
@@ -1309,6 +1323,99 @@ input#checkbox-carbon + label{
   background:url("../images/finishes/zm-silesia/zm-carbon-swatch.jpg");
   background-size: contain;
 }
+/*Aurubis*/
+.sample-checkbox-container .sample-checkbox + label {
+width: 33.33%;
+
+}
+@media only screen and (max-width: 540px) {
+  .sample-checkbox-container .sample-checkbox + label {
+    width: 50%;
+    
+    }
+}
+input#checkbox-standard + label{
+  background:url("../images/finishes/aurubis/nordic-standard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input#checkbox-brown + label{
+  background:url("../images/finishes/aurubis/nordic-brown.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input#checkbox-brown-light + label{
+  background:url("../images/finishes/aurubis/nordic-brown-light.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input#checkbox-brass + label{
+background:url("../images/finishes/aurubis/nordic-brass.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+input#checkbox-brass-weathered + label{
+background:url("../images/finishes/aurubis/nordic-brass-weathered.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+input#checkbox-bronze + label{
+  background:url("../images/finishes/aurubis/nordic-bronze.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input#checkbox-royal + label{
+  background:url("../images/finishes/aurubis/nordic-royal.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input#checkbox-green-traditional + label{
+  background:url("../images/finishes/aurubis/nordic-green-traditional.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input#checkbox-green-living-1 + label{
+background:url("../images/finishes/aurubis/nordic-green-living-1.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+input#checkbox-green-living-2 + label{
+background:url("../images/finishes/aurubis/nordic-green-living-2.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+
+input#checkbox-turquoise + label{
+  background:url("../images/finishes/aurubis/nordic-turquoise.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input#checkbox-blue-traditional + label{
+  background:url("../images/finishes/aurubis/nordic-blue-traditional.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input#checkbox-blue-living-1 + label{
+  background:url("../images/finishes/aurubis/nordic-blue-living-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input#checkbox-blue-living-2 + label{
+background:url("../images/finishes/aurubis/nordic-blue-living-2.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+input#checkbox-blue-living-3 + label{
+background:url("../images/finishes/aurubis/nordic-blue-living-3.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+
 
 .sample-request-flex-x3 {
   flex-wrap: wrap;
@@ -1347,23 +1454,25 @@ margin-bottom: 10px;
 .brochure-request label {
 margin-bottom: 5px;
 width: 33.33%;
+line-height: 1.7;
   }
+
+ 
 @media only screen and (max-width: 992px) {
 
   .brochure-request {
     flex-wrap: wrap;
-  
+  margin-bottom: 20px;
   }
 
-
-.brochure-request label {
-width: 50%;
-}
 }
 @media only screen and (max-width: 767px) {
 .p-brochure {
   margin-top: 15px;
 }
+.brochure-request label {
+  width: 50%;
+  }
 
 }
 #zm-silesia-contact-form .brochure-request label {
