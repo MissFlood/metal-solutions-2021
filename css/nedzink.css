@@ -24,8 +24,8 @@ main section {
 }
 @media only screen and (max-width: 768px) {
 main section {
-  padding-top: 4em;
-  padding-bottom: 6em;
+  padding-top: 3.5em;
+  padding-bottom: 5.5em;
 }
 .tabs-section {
   padding-top: 0;
@@ -1325,14 +1325,17 @@ input#checkbox-carbon + label{
 }
 /*Aurubis*/
 .sample-checkbox-container .sample-checkbox + label {
-width: 33.33%;
 
+min-width: 160px!important;
+  
+  }
+.sample-checkbox-container {
+  height: 250px;
 }
 @media only screen and (max-width: 540px) {
-  .sample-checkbox-container .sample-checkbox + label {
-    width: 50%;
-    
-    }
+  .sample-checkbox-container {
+    height: 400px;
+  }
 }
 input#checkbox-standard + label{
   background:url("../images/finishes/aurubis/nordic-standard.png");
@@ -1473,7 +1476,9 @@ line-height: 1.7;
 .brochure-request label {
   width: 50%;
   }
-
+  #aurubis-contact-form .brochure-request label {
+    width: 100%;
+      }
 }
 #zm-silesia-contact-form .brochure-request label {
   width: 100%;
