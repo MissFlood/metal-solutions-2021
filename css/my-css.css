@@ -85,13 +85,9 @@ font-size: 35px;
 line-height: 1;
 text-align: center;
 }
-section h2 {
-  margin-bottom: 2em;
-}
+
 @media only screen and (max-width: 768px) {
-  section h2 {
-    margin-bottom: 1.5em;
-  }
+
 }
 .more-button {
   display: block;
