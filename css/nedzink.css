@@ -77,11 +77,28 @@ font-weight: bold;
 text-align: center;
 margin-bottom: 2.5em;
 }
-.downloads-section h3 {
+.downloads-section h3, .finishes h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 14px;
   color: #000000;
+
+}
+
+.finishes h3{
+width: 100%;
+position: relative;
+background: linear-gradient(rgb(216, 216, 216), rgb(216, 216, 216)) bottom left /* left or right or else */ no-repeat;
+background-size: 40% 1px;
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+@media only screen and (max-width: 768px) {
+.finishes h3 {
+  background-size: 95% 1px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
 
 }
 .tabs-section h2, .about-section h2 {
@@ -89,12 +106,16 @@ margin-bottom: 2.5em;
   font-weight: bold;
 }
 
+
 .tabs-section h3, .about-section h3 {
   font-size: 15px;
   font-weight: bold;
   margin-top: 30px;
 }
-
+#greencoat-tabs-section h3{
+ 
+  padding-bottom: 10px;
+}
 @media only screen and (max-width: 768px) {
   main section h2{
     font-size: 22px;
@@ -102,6 +123,10 @@ margin-bottom: 2.5em;
   }
   .tabs-section h3, .about-section h3 {
     font-size: 18px;
+  }
+  #greencoat-tabs-section h3{
+ 
+    padding-bottom: 5px;
   }
   }
 
@@ -172,19 +197,27 @@ font-style: italic;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  width: 550px;
 }
 @media only screen and (max-width: 668px) {
   #zintek-logo {
   width: 95%;
   }
 }
-#aurubis-logo-banner {
+
+#greencoat-logo-banner {
+width: 500px;
+}
+#aurubis-logo-banner{
   width: 600px;
   }
   @media only screen and (max-width:668px) {
   #aurubis-logo-banner {
     width: 100%;
+    }
+
+    #greencoat-logo-banner {
+width: 90%;
     }
   }
 
@@ -299,14 +332,17 @@ font-size: 30px;
 }
 }
 #zintek-banner-1 {
-  background-image: url(../images/zintek-gallery/realizzazioni-zintek-psenner11.jpg);
+  background-image: url(../images/zintek-gallery/banner/zintek-davines-village.jpg);
+  background-position: bottom;
 }
 #zintek-banner-2 {
-  background-image: url(../images/zintek-gallery/realizzazioni-zintek-resort-waterrijk1.jpg);
+  background-image: url(../images/zintek-gallery/banner/zintek-waterrijk-oesterdam-2.jpg);
+  background-position: bottom;
 }
 
 #zintek-banner-3 {
-  background-image: url(../images/zintek-gallery/realizzazioni-zintek-pontili-ACTV-28.jpg);
+  background-image: url(../images/zintek-gallery/banner/zintek-villa-aimaro.jpg);
+  background-position: bottom;
 
 }
 
@@ -333,8 +369,12 @@ font-size: 30px;
   background-image: url(../images/aurubis-gallery/banner/aurubis-q&m-dings-nordic-brown-light.jpg);
  
 }
-
-
+#greencoat-banner-2 {
+  background-image: url(../images/greencoat-gallery/banner/greencoat-plx-pural-anthracite-mccormick-mercinch.jpg);
+}
+#greencoat-banner-1 {
+  background-image: url(../images/greencoat-gallery/banner/greencoat-lfc-training-center-night.jpg);
+}
 /* #endregion */
 
 /* #region Gallery Section */
@@ -728,6 +768,9 @@ figcaption {
   .jx-knightlab {
     display: none!important;
   }
+.mobile-tablet-img {
+  display: none;
+}
 
   @media only screen and (max-width: 992px) {
     .juxtapose, .juxtapose-0 {
@@ -735,12 +778,20 @@ figcaption {
       height: 300px!important;
     }
 
+ 
+
   }
   @media only screen and (max-width:768px) {
     .juxtapose, .juxtapose-0 {
       width: 350px!important; 
       height: 350px!important;
     }
+    .mobile-tablet-img {
+      display: block;
+    }
+    .hide-under-778 {
+      display: none;
+        }
 
   }
 .manufacturer-video{
@@ -751,11 +802,31 @@ figcaption {
 
 
 }
+#greencoat-tabs-section .manufacturer-video {
+  float:none;
+align-self: center;
+
+}
+#henning-stummel-img {
+align-self: center;
+width: 550px;
+margin-right: 20px;
+
+}
 @media only screen and (max-width: 992px) {
   .manufacturer-video {
   width: 100%;
 
 }
+#greencoat-tabs-section .manufacturer-video {
+margin-left:0px;
+margin-bottom: 0px;
+}
+#henning-stummel-img {
+margin-top: 0px;
+  width: 100%;
+  
+  }
   }
   .pill-2-img-container {
    width: 40%;
@@ -781,6 +852,7 @@ figcaption {
     margin-top: 0px;
     margin-bottom: 50px;
    }
+
    .flexx {
   flex-direction: column-reverse;
   }
@@ -796,6 +868,10 @@ figcaption {
   @media only screen and (max-width: 768px) {
     .manufacturer-video {
       margin-bottom: 30px;
+      height: 245px;
+    }
+    #greencoat-tabs-section .manufacturer-video{
+      margin-bottom: 0px;
     }
     .top-about-h3 {
       margin-top: 0px!important;
@@ -885,10 +961,16 @@ text-align: center;
       .nav-pills .nav-link {
           padding: 5px 0 0px 0;
       }
-      #nedzink-pills-4-tab, #aurubis-pills-3-tab {
+      #nedzink-pills-4-tab, #aurubis-pills-3-tab, #greencoat-pills-4-tab {
         padding-bottom: 5px;
       }
-  
+    }
+  .tabs-section #pills-tab {
+    flex-wrap: nowrap;
+  }
+  .tabs-section #pills-tab .nav-link {
+    white-space: nowrap;
+  }
 .navbar .menu-open {
   background-color: black!important;
 }
@@ -901,7 +983,7 @@ text-align: center;
 .nordic-decor-carousel .item {
 height: 400px;
 
-}
+
 }
 @media only screen and (max-width: 668px) {
  .nordic-decor-carousel .item {
@@ -983,6 +1065,67 @@ padding: 0;
 
 /* #endregion */
 
+/* #region GreenCoat Guarantee Section */
+.greencoat-guarantee-section {
+  background-color: #739600;
+  color: white!important;
+  padding-bottom: 5em;
+}
+#greencoat-guarantee-logo {
+  width: 350px;
+}
+#greencoat-guarantee-stamps {
+  align-self: center;
+}
+.greencoat-guarantee-section p {
+margin-top: 20px;
+}
+.greencoat-guarantee-section h2 {
+  text-align: left;
+  font-size: 50px;
+  font-style: italic;
+  margin-bottom: 0px;
+  align-self: center;
+  text-shadow: 2px 2px rgb(104, 104, 104);
+}
+@media only screen and (max-width: 1199px) {
+.greencoat-guarantee-section h2 {
+  font-size: 40px;
+}
+}
+@media only screen and (max-width: 992px) {
+  .greencoat-guarantee-section h2 {
+    font-size: 35px;
+  }
+#greencoat-guarantee-stamps {
+
+  width: 250px;
+}
+}
+@media only screen and (max-width: 778px) {
+  #greencoat-guarantee-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .greencoat-guarantee-section h2 {
+    font-size: 28px;
+    text-align:center;
+    margin: 25px 0;
+    width: 100%;
+  }
+#greencoat-guarantee-stamps {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.greencoat-guarantee-section p {
+  text-align: center;
+  }
+}
+/* #endregion */
+
 /* #region Finishes Section */
 #nedzink-finishes .finishes-block p, #zm-silesia-finishes .finishes-block p, #zintek-finishes .finishes-block p {
   margin-bottom: 0;
@@ -998,12 +1141,14 @@ padding: 0;
 }
 .mobile-finishes-block img, .tablet-finishes-block img{
 width: 100%;
+height: 100%;
 }
 .mobile-finishes-block .sample-item, .tablet-finishes-block .sample-item{
  padding-right: 10px;
   }
-  .finishes-block-row-5 img, .finishes-block-row-6 img {
+  .finishes-block-row-5 img, .finishes-block-row-6 img, .finishes-block-row-7 img {
   width: 100%;
+  height: 100%;
   }
   .finishes-block-row-5 .sample-buttons{
    margin: 0 0 5px 0;
@@ -1014,11 +1159,16 @@ width: 100%;
     width: 20%;
   }
   .finishes-block-row-6 .sample-item {
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 0px;
     width: 16.666%;
 
   }
-  .finishes-block-row-5 .sample-buttons, .finishes-block-row-6 .sample-buttons {
+  .finishes-block-row-7 .sample-item {
+    padding: 0 10px 0 0px;
+    width: 14.29%;
+
+  }
+  .finishes-block-row-5 .sample-buttons, .finishes-block-row-6 .sample-buttons, .finishes-block-row-7 .sample-buttons {
     display: flex;
     
   }
@@ -1029,7 +1179,10 @@ width: 100%;
     font-weight: bold;
   }
   .sample-buttons {
-   margin: 0px 0px 10px 10px;
+   margin: 0px 0px 10px 0px;
+  }
+  .mobile-finishes-block .sample-buttons {
+    margin: 0px 0px 10px 10px;
   }
   #aurubis-finishes .sample-buttons {
     margin-left: 0px;
@@ -1054,14 +1207,16 @@ opacity: 0;
   .sample-item a[aria-expanded=true] .sample-overlay{
     opacity: 1;
     }
-    .finishes-block-row-6 .sample-overlay {
+    .finishes-block-row-6 .sample-overlay, .finishes-block-row-7 .sample-overlay {
       opacity: 1;
     }
 
   .sample-item a .sample-overlay img {
     display: none;
   }
- 
+ .sample-border {
+   border: solid 1px rgb(190, 190, 190);
+ }
   .sample-item a[aria-expanded=true] .sample-overlay img{
    display: inline;
     }
